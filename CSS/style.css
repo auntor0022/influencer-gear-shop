@@ -1,15 +1,17 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .poppins-regular{
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
   }
-/* *{
+*{
   margin: 0;
   padding: 0;
-} */
+}
 
 
 /* Shared Styles */
@@ -24,7 +26,7 @@
 /* Nav-bar */
 .nav-bar{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 50px auto;
   justify-content: space-between;
   align-items: center;
 
@@ -95,6 +97,68 @@
 }
 
 
+/* Popular collection related styles */
+.collection-container{
+  max-width: 1050px;
+  margin: 0 auto;
+  /* margin-bottom: 50px; */
+}
+.collection-title{
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.collection-img-container{
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.img-box{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 17px 14px;
+  border-radius: 5px;
+  max-width: 330px;
+}
+.img-box img{
+  width: 100%;
+}
+.collection-box-title{
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-top: 16px;
+}
+.collection-box-title2{
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 6px;
+}
+.stars{
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.stars i{
+  color: #FB8200;
+  margin-top: 6px;
+}
+.stars h5{
+  color: #5E6366;
+  font-weight: bold;
+  font-size: 0.87rem;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+.collection-box-description{
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-size: 0.87rem;
+  color: #787885;
+}
+
 
 
 /* Responsive for small device */
@@ -127,9 +191,13 @@
     justify-items: center;
     border: none;
     margin-top: 50px;
-    /* margin: auto; */
-    /* gap: 10px; */
-    /* margin-right: 0; */
+  }
+  .collection-title{
+    width: 100%;;
+  }
+  .collection-img-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 28px;
   }
   
 }
